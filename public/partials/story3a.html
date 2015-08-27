@@ -1,0 +1,21 @@
+<div id="story3_html">
+<p><b>{{ data.char1 }}</b><br>
+I'm scared {{ data.char2 }}, I think we should head back.
+</p>
+
+<p><b>{{ data.char2 }}</b><br>
+{{ data.char1 }}, you know we won't be better than the old planetary express crew if we turn around.
+</p>
+
+<p><b>{{ data.char3 }}</b><br>
+May the meatbags rest in peace.
+</p>
+</div>
+
+<div ng-hide="HideStory3a">
+	<a ui-sref="story0.story1.story2.story3a.story4a">
+	    <button class="btn btn-primary" ng-click="HideStory3a=true">Continue reading...</button>
+	</a>
+</div>
+
+<div ui-view></div>

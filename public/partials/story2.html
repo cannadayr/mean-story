@@ -1,0 +1,24 @@
+<div id="story2_html">
+<b>***SOME TIME LATER***</b>
+<br>
+<p><b>DISEMBODIED VOICE LADY</b><br>
+WARNING, YOU ARE NOW ENTERING FORBIDDEN SPACE, TURN BACK IMMEDIATELY
+</p>
+
+
+<p><b>{{ data.char3 }}</b><br>
+Forbidden shmorshmidden. Ooh, I'm *so* scared. What are they gonna do?
+</p>
+</div>
+
+
+<div ng-hide="HideStory2">
+	<a ui-sref="story0.story1.story2.story3a">
+	    <button class="btn btn-warning" ng-click="HideStory2=true">Turn around?</button>
+	</a>
+	<a ui-sref="story0.story1.story2.story3b">
+	    <button class="btn btn-primary" ng-click="HideStory2=true">Go forward?</button>
+	</a>
+</div>
+
+<div ui-view></div>

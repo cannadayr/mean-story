@@ -1,0 +1,24 @@
+<!-- table>(thead>tr*3>td*2)#(tbody>tr*3>td*2) -->
+<div id="story0_html">
+<p><b>Professor:</b><br> Good news, everyone! We have a package delivery.
+Wait... who are you three again?</p>
+</div>
+<div ng-hide="HideStory0">
+	<table>
+		<thead>
+			<tr>
+				<td><input class="form-control" ng-model="data.char1"></td>
+			</tr>
+			<tr>
+				<td><input class="form-control" ng-model="data.char2"></td>
+			</tr>
+			<tr>
+				<td><input class="form-control" ng-model="data.char3"></td>
+			</tr>
+		</thead>
+	</table>
+	<a ui-sref="story0.story1">
+	    <button class="btn btn-primary" ng-click="HideStory0=true">Continue reading...</button>
+	</a>
+</div>	
+<div ui-view></div>

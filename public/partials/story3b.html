@@ -1,0 +1,21 @@
+<div id="story3_html">
+<b>***SHIP ENGINES SHUT DOWN***</b>
+<p><b>{{ data.char2 }}</b><br>
+Oh no! I've lost control of the ship!
+</p>
+
+<p><b>{{ data.char1 }}</b><br>
+We're gonna crash!!</p>
+
+<p><b>{{ data.char2 }}</b><br>
+Not if I can help it!
+</p>
+</div>
+
+<div ng-hide="HideStory3b">
+	<a ui-sref="story0.story1.story2.story3b.story4b">
+	    <button class="btn btn-primary" ng-click="HideStory3b=true">Continue reading...</button>
+	</a>
+</div>
+
+<div ui-view></div>

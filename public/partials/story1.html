@@ -1,0 +1,29 @@
+<div id="story1_html">
+<p>Well whoever you are, you'll be making a delivery to the planet Rigel 7, a mysterious world in the darkest depths of the Forbidden Zone.</p>
+
+<p><b>{{ data.char1 }}:</b><br>
+Uh-oh. I don't like the sound of that.
+</p> 
+
+<p><b>{{ data.char2 }}:</b><br>
+Professor, are we even allowed in the Forbidden Zone?
+</p>
+
+<p><b>Professor:</b><br>
+Why of course. It's just a name, like the Death Zone, or the Zone of No Return. All the zones have names like that in the Galaxy of Terror.
+</p>
+
+<p><b>{{ data.char3 }}</b><br>
+But...
+</p>
+
+<p><b>Professor:</b><br>
+Off you go!
+</p>
+</div>
+<div ng-hide="HideStory1">
+	<a ui-sref="story0.story1.story2">
+	    <button class="btn btn-primary" ng-click="HideStory1=true">Continue reading...</button>
+	</a>
+</div>
+<div ui-view></div>
